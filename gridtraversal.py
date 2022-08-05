@@ -23,7 +23,7 @@ Input: m=3; n=2; Output = 3
 Input: m=3; n=7; Output = 28
 
 """
-
+import math
 class Solution:
     def uniquePaths(self,m, n):
         # type m: int
@@ -31,7 +31,8 @@ class Solution:
         # return: int
         
         # TODO: Write code below to return an int with the solution to the prompt
-        pass
+        #using dynamic programming
+        return int(math.factorial(m-1+n-1)/(math.factorial(m-1)*math.factorial(n-1)))
 
 def main():
     num1 = int(input())
